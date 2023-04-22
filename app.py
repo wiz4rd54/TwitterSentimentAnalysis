@@ -6,6 +6,7 @@ import streamlit as st
 
 ## nltk
 import nltk
+nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 
 pickleModel = open("Sentiment-LR.pickle","rb")
