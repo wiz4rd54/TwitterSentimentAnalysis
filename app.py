@@ -1,16 +1,8 @@
-import numpy as np
-import pickle
-import pandas as pd
-import streamlit as st 
-from PIL import Image
-import nltk
-
 ## utilities
 import re
 import pickle
 import numpy as np
-import pandas as pd
-import streamlit as st
+import streamlit as st 
 
 ## nltk
 import nltk
@@ -19,7 +11,7 @@ from nltk.stem import WordNetLemmatizer
 pickleModel = open("Sentiment-LR.pickle","rb")
 classifier = pickle.load(pickleModel)
 
-picklevectorizer = open("vectoriser-ngram-(1,2).pickle","rb")
+picklevectorizer = open("vectorizer.pickle","rb")
 vectorizer = pickle.load(picklevectorizer)
 
 ## Defining all the emojis with their meanings.
